@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{%- block oops %}
+{{ super() }}
+  <p>oops_in_base</p>
+{%- endblock %}
+
+{%- block ok %}
+{{ super()|safe }}
+  <p>ok_in_base</p>
+{%- endblock %}
